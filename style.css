@@ -1,0 +1,92 @@
+@import url("http://db.onlinewebfonts.com/c/bfbdc6a04609bff0d5ccdfcf6b766d95?family=Flood+Std");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(160deg, #8a3ab9, #cd486b);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+
+header h1 {
+    background: linear-gradient( #780206, #061161);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-family: Flood Std;
+    font-size: 4rem;
+}
+#turns{
+    text-transform: uppercase;
+    font-family: Flood Std;
+    letter-spacing: 1px;
+    word-spacing: 1rem;
+    font-size: 2rem;
+    color: #1e272e;
+
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+    cursor: pointer;
+
+}
+
+.container .button {
+    background: linear-gradient(#434343, #000000);
+}
+
+.container .xClass {
+    background: linear-gradient(#480048, #C04848);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Flood Std;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.container .oClass {
+    background: linear-gradient(#780206, #061161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Flood Std;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+
+@media(max-width:500px){
+    header h1{font-size: 50px;}
+    header #turns{font-size: 30px;}
+
+}
